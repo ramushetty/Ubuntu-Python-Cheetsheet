@@ -26,3 +26,5 @@ what ever the install packages will be available and isolated only to this venv
 If you have requirement.txt file, after activating venv use this cmd to install all dependencies
 $ pip install -r requirements.txt
 
+list packages that installed
+$ pip list

@@ -1,0 +1,25 @@
+Install pip first
+$ sudo apt-get install python3-pip
+
+Verify it 
+$ pip -V 
+
+Install python3-venv package that provides venv module
+$ sudo apt install python3-venv
+
+Go to the Dir you want to create virtual environment and execute this cmd
+$ python3 -m venv venv
+
+you can change last venv to your required environmental name
+
+Activate the venv
+$ source venv/bin/activate
+(venv) $
+once activated you will find venv as prefix 
+
+To deactivate
+(venv) $ deactivate
+
+what ever the install packages will be available and isolated only to this venv
+
+

@@ -1,2 +1,2 @@
 # Ubuntu-Python-Cheetsheet
-This repo contains helpful commands that are useful in Python and Ubuntu 
+This repo contains helpful commands,Documents  that are useful in Python and Ubuntu 

@@ -1,0 +1,12 @@
+Activate virtual env
+
+$ pip install alembic
+
+$ alembic init alembic 
+this cmd will create alembic.ini file and alembic dir 
+
+$ alembic revision -m "create account table"
+A .py file will be created in versions folder present in alembic dir
+
+$ alembic upgrade head
+

@@ -1,0 +1,29 @@
+1. Redis is in memory data structure store 
+2. Used as a NoSQL Database
+3. Distributed cache
+4. Message Broker
+
+What is in-memory?
+An in-memory database is a database management system that primarily relies on main memory for computer data storage.
+
+It supports various data structures
+string, Hashes, List, Sets, sorted sets, Bitmaps, HyperLogLog, Geo spatial Indexes
+
+Architechture
+1.Redis console client
+2. Redis Server
+
+Advantages.
+1. Exceptionally fast , 110000 writes per second and 81000 reads per seconds
+2. persistence, stores data in main memory and changes are async saved on disk
+3. Rich data types
+4. Atomicity (concurrent access)
+5. Multi utility tool
+
+
+Installation
+
+$ sudo apt update
+$ sudo apt install redis-server
+$ redis-server
+

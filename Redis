@@ -27,3 +27,11 @@ $ sudo apt update
 $ sudo apt install redis-server
 $ redis-server
 
+
+
+useful commands
+
+$ sudo service redis-server stop
+$ ps aux | grep redis
+$ kill -9 8821(port number)
+$ ps -ef |grep redis

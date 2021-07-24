@@ -1,0 +1,21 @@
+l = ["1", "two", "2.3"]  # list mutable []
+t = (1,2,3,4) # tuple immutable () can not add or delete items from it 
+s = {"Ramu", "Bob", "maou"} # set {} can not add duplicates to it, we can not use subscript to access items 
+
+print(l[0])
+
+l[1] = 2
+
+l.append(4)
+
+s.add("hello")
+
+print(l)
+print(t)
+print(s)
+
+# o/p
+# 1
+# ['1', 2, '2.3', 4]
+# (1, 2, 3, 4)
+# {'maou', 'hello', 'Bob', 'Ramu'}

@@ -1,0 +1,18 @@
+# if condition
+if condition:
+    ...
+elif condition:
+    ...
+else:
+    ...
+
+#loops
+l = [1,2,3,4,5]
+for item in l:
+    print(item)
+
+while condition:
+    ...
+    
+    
+# you can use the "in" keyword in conditions

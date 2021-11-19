@@ -32,3 +32,20 @@ $ pip list
 To automatically insert into requirement.txt file
 $ pip3 freeze > requirements.txt 
 
+direct pip installation of dependencies has a vunarability with request package.
+So pipenv carries hash where it installs only specified package version
+
+Another way we can use pipenv or poetry
+
+$ pip install pipenv
+
+create virtual env for project use follow cmd
+$ pipenv shell
+$ pipenv install flask
+$ pipenv install requests
+
+to uninstall 
+$ pipenv uninstall flask
+
+to deactivate virtual env
+$ exit

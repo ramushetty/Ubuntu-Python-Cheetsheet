@@ -49,3 +49,18 @@ $ pipenv uninstall flask
 
 to deactivate virtual env
 $ exit
+
+
+To check pip package installed successfully or not use Python interpreter 
+(venv) $ python
+>> import flask
+>>
+
+if no error then flask installed successfully 
+
+
+Routes:
+The association between URL and python function that handles it is called a Route
+
+
+

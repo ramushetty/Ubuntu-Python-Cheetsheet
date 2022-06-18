@@ -1,15 +1,22 @@
+A virtual environment is a copy of the Python interpreter into which you can install pacakages privately, 
+without affecting the global Python interpreter installed in system
+it prevent package clutter and version conflicts 
 Install pip first
+pip is a Python package manager
 $ sudo apt-get install python3-pip
 
 Verify it 
 $ pip -V 
 
+Ubuntu
 Install python3-venv package that provides venv module
 $ sudo apt install python3-venv
+or
+$ sudo apt-get install python3-venv
 
 Go to the Dir you want to create virtual environment and execute this cmd
 $ python3 -m venv venv
-
+$ python3 -m venv virtual-environment-name -> example
 you can change last venv to your required environmental name
 
 Activate the venv

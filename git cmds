@@ -1,0 +1,10 @@
+$ git clone https://github.com/miguelgrinberg/flasky.git -> clone repo to local dir
+$ git checkout 1a -> change branches
+$ git reset --hard -> revert the local changes and goes back to original state
+$ git fetch --all
+$ git fetch --tags
+$ git reset --hard origin/master
+$ git diff 2a 2b -> to check difference between two branches
+$ git add .
+$ git commit -m "message"
+$ git push

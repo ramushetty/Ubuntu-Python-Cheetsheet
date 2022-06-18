@@ -1,10 +1,13 @@
-A virtual environment is a copy of the Python interpreter into which you can install pacakages privately, 
-without affecting the global Python interpreter installed in system
-it prevent package clutter and version conflicts 
-Install pip first
-pip is a Python package manager
-$ sudo apt-get install python3-pip
+>A virtual environment is a copy of the Python interpreter into which you can install pacakages privately, 
+>without affecting the global Python interpreter installed in system
+>it prevent package clutter and version conflicts 
 
+##Install pip first
+
+> pip is a Python package manager
+```
+$ sudo apt-get install python3-pip
+```
 Verify it 
 $ pip -V 
 

@@ -1,0 +1,65 @@
+Celery requires a solution to send and receive messages; usually this comes in the form of a separate service called a message broker.
+
+$ sudo apt-get install rabbitmq-server
+
+$ docker run -d -p 5672:5672 rabbitmq
+
+
+$ docker run -d -p 6379:6379 redis
+
+other brokers - Amazon SQS.
+
+
+$ pip install celery
+
+from celery import Celery
+
+app = Celery('tasks', broker='pyamqp://guest@localhost//')
+
+@app.task
+def add(x, y):
+    return x + y
+    
+    
+running
+
+$ celery -A tasks worker --loglevel=INFO
+
+$  celery worker --help
+
+$ celery --help
+
+
+calling task
+
+
+>>> from tasks import add
+>>> add.delay(4, 4)
+
+
+keeping results
+
+app = Celery('tasks', backend='rpc://', broker='pyamqp://')
+
+>>> from proj.tasks import add
+
+>>> add.delay(2, 2)
+>>> res = add.delay(2, 2)
+>>> res.get(timeout=1)
+
+>>> res.failed()
+True
+
+>>> res.successful()
+False
+
+>>> res.state
+'FAILURE'
+
+PENDING -> STARTED -> SUCCESS
+
+
+>>> res.id
+
+add.apply_async((2, 2), queue='lopri', countdown=10)
+
